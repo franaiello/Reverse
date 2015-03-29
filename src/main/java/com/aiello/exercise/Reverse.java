@@ -7,7 +7,7 @@ public class Reverse {
             return original;
         }
 
-        Character[] reverse = new Character[4];
+        Character[] reverse = new Character[original.length];
         int index = 0;
 
         for (int i = original.length - 1; i >= 0; i--, index++) {
