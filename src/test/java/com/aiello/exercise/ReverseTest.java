@@ -9,7 +9,7 @@ public class ReverseTest {
     public void reverseCharacterArray() {
         Character[] original = {'a', 'b', 'c', 'd'};
         Character[] reverse = Reverse.reverseCharacterArray(original);
-        assertThat(reverse).isEqualTo(new Character[] {'d','c','b', 'a'});
+        assertThat(reverse).isEqualTo(new Character[] {'d','c','b','a'});
     }
 
     @Test
@@ -50,5 +50,12 @@ public class ReverseTest {
         String original = "";
         String reverse = Reverse.reverseString(original);
         assertThat(reverse).isEqualTo("");
+    }
+
+    @Test
+    public void reverseIntegerArray() {
+        int[] original = new int[] {1,2,3,4,5,6,7,8,9};
+        int[] reverse = Reverse.reverseIntegerArray(original);
+        assertThat(reverse).isEqualTo(new int[]{9,8,7,6,5,4,3,2,1});
     }
 }
